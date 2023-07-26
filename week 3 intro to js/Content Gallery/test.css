@@ -1,0 +1,87 @@
+html,
+body {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(232, 239, 239, 0.896);
+}
+
+header {
+        display: flex;
+        justify-content: center;
+}
+
+.box {
+        display: inline-block;
+}
+
+.section-1 {
+        border: 1px solid;
+        text-align: center;
+        padding: 5px;
+        max-width: 100%;
+
+        flex-wrap: wrap;
+}
+
+.container-1 .container-2{
+        text-align: center;
+        padding: 5px;
+        max-width: 100%;
+        align-content: center;
+}
+
+
+.image-box
+.image-box-2 {
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+        max-width: 100%;
+
+        height: 40vh;
+        padding: 10px;
+
+        object-fit: cover;
+
+        margin-right: 10px;
+        margin-left: 30px;
+
+        align-items: center;
+        justify-content: center;
+}
+
+
+.image-box img{
+        width: 250px;
+        height: 150px;
+}
+.image-box-2 img{
+        width: 250px;
+        height: 150px;
+        
+}
+@media screen and (max-width: 768px) {
+        h3 {
+                font-size: 18px;
+                /* Adjust font size for smaller screens */
+        }
+}
+
+@media screen and (max-width: 480px) {
+        h3 {
+                font-size: 16px;
+                /* Adjust font size for even smaller screens */
+        }
+}
+
+h1{
+
+        text-align: center;
+        font-family: 'Dai Banna SIL', serif;
+        font-size: 50px;
+}
+h3{
+        font-family: 'Dai Banna SIL', serif;
+        font-size: 40px;
+}

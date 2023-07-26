@@ -19,11 +19,15 @@ function canIOrderItem(dishName, stockArray) {
         return false
 }
 
+function riceTrck(trackRice) {
+        if (trackRice.Rice < 1){
+                console.log(trackRice.Rice)
+                trackRice.Rice += 5;
+                console.log(trackRice.Rice)
+        }
+}
+
 // Test cases
-const stockArray = [{ "Pizza": 5 }, { "Burger": 3 }];
- // Test case 1: Dish available in stock
-console.log(canIOrderItem("Pizza", stockArray)); // Output: true
- // Test case 2: Dish not available in stock
-console.log(canIOrderItem("Salad", stockArray)); // Output: false
- // Test case 3: Empty stock array
-console.log(canIOrderItem("Burger", [])); // Output: false
+const stockArray = [{ "Pizza": 5 }, { "Burger": 3 }, {"Rice": 0}];
+var trackRice = stockArray[2];
+console.log(canIOrderItem("Burger", stockArray));

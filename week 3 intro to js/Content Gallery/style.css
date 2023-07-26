@@ -2,37 +2,47 @@ html, body {
         height: 100%;
         width: 100%;
       }
-
+header{
+        display: flex;
+        justify-content: center;
+}
 h1{
-        
+
         text-align: center;
         font-family: 'Dai Banna SIL', serif;
         font-size: 50px;
 }
-
+/**
 .seperator{
         border-style: solid;
 }
+
 .seperator-2 {
         border-style: solid;
 }
-.seperator h3{
+*/
+.seperator .seperator-2 .seperator-3{
         text-align: center;
         font-family: 'Dai Banna SIL', serif;
         font-size: 40px;
+
+        display: in;
 }
+
 .seperator-2 h3{
         text-align: center;
         font-family: 'Dai Banna SIL', serif;
         font-size: 40px;
 }
-.seperator-3 h3{
+h3{
         text-align: center;
         font-family: 'Dai Banna SIL', serif;
         font-size: 40px;
+        border: 1px solid black;
+        box-sizing: content-box;
 }
 .rowBox{
-        border-style: solid;
+        /*border-style: solid;*/
         display: flex;
         
         justify-content: center; /* Center the items horizontally */
@@ -42,6 +52,7 @@ h1{
 
         padding-left: 10px;
         padding-right: 10px;
+       
 }
 
 img{
@@ -50,9 +61,10 @@ img{
         object-fit: cover; /* or object-fit: contain; */
 }
 
-img#streetFashio{
-        height: 100%;
+#streetFashion{
+        height: 170px;
 }
+
 h3{
-        display: none;
+        height: 10px;
 }
