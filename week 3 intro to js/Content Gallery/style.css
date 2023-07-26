@@ -1,0 +1,58 @@
+html, body {
+        height: 100%;
+        width: 100%;
+      }
+
+h1{
+        
+        text-align: center;
+        font-family: 'Dai Banna SIL', serif;
+        font-size: 50px;
+}
+
+.seperator{
+        border-style: solid;
+}
+.seperator-2 {
+        border-style: solid;
+}
+.seperator h3{
+        text-align: center;
+        font-family: 'Dai Banna SIL', serif;
+        font-size: 40px;
+}
+.seperator-2 h3{
+        text-align: center;
+        font-family: 'Dai Banna SIL', serif;
+        font-size: 40px;
+}
+.seperator-3 h3{
+        text-align: center;
+        font-family: 'Dai Banna SIL', serif;
+        font-size: 40px;
+}
+.rowBox{
+        border-style: solid;
+        display: flex;
+        
+        justify-content: center; /* Center the items horizontally */
+        align-items: center; /* Center the items vertically */
+        gap: 10px; /* Adds a gap between the grid items */
+        height: 40vh; /* Adjust the height as needed */
+
+        padding-left: 10px;
+        padding-right: 10px;
+}
+
+img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* or object-fit: contain; */
+}
+
+img#streetFashio{
+        height: 100%;
+}
+h3{
+        display: none;
+}
