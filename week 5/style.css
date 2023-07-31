@@ -4,6 +4,7 @@ header{
         justify-content: space-around;
         background-color: #12263A;
         color: #FEFAE0;
+        align-items: center;
 }
 
 .intro h2, h3{
