@@ -1,3 +1,6 @@
+body{
+        background-color: rgb(223, 228, 216);
+}
 
 header{
         display: flex;
@@ -19,6 +22,7 @@ header{
         text-align: center;
         padding-top: 10px;
         padding-bottom: 20px;
+        
 }
 
 .cards{
@@ -40,4 +44,69 @@ header{
 
 .hidden{
         display: none;
+}
+
+#signin-color{
+        background-color: #347488;
+        border: 1px solid;
+        padding: 5px;
+        height: 50px;
+        border-radius: 15px;
+        font-weight: bolder;
+        color: #ebedf1;
+}
+
+#signin-color:hover{
+        background-color: #12263A;
+        color: papayawhip;
+}
+.profiles{
+        padding-top: 20px;
+}
+
+ .obasi {
+        display: flex;
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 5px;
+        height: 200px;
+        
+        object-fit: cover;
+        gap: 157px;
+        text-align: center;
+        
+        
+}
+
+.john{
+        display: flex;
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 5px;
+        padding-top: 15px;
+        height: 200px;
+        
+        object-fit: cover;
+        gap: 157px;
+        text-align: center;
+}
+
+.john img{
+        width: 150px;
+}
+
+.goodness{
+        display: flex;
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 5px;
+        padding-top: 15px;
+        height: 200px;
+        
+        object-fit: cover;
+        gap: 157px;
+        text-align: center;
+}
+.goodness img{
+        width: 200px;
 }
