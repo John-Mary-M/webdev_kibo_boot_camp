@@ -1,0 +1,42 @@
+
+header{
+        display: flex;
+        justify-content: space-around;
+        background-color: #12263A;
+        color: #FEFAE0;
+}
+
+.intro h2, h3{
+        text-align: center;
+}
+.intro{
+        max-width: 750px;
+        margin: 0 auto;   
+}
+
+.signIn{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+}
+
+.cards{
+        display: flex;
+        padding-top: 20px;
+        max-width: 750px;
+        margin: 0 auto; 
+        gap: 5px;
+}
+
+.pyCard, .jsCard, .dataCard, .phpCard, .javaCard, .cCard{
+        text-align: center;
+        border: 1px solid;
+
+}
+.cardButton{
+        margin-bottom: 10px;
+}
+
+.hidden{
+        display: none;
+}
