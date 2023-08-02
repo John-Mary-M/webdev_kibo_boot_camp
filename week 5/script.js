@@ -1,24 +1,32 @@
-const currentCard = document.querySelector('.cw')
+// variable to keep track of current slide
+let currentSlide = 1;
 
-const nextButton = document.querySelector('.slider');
-const prevButton = document.querySelector('.slider');
+const nextbutton = document.querySelector('.next')
+const prevbutton = document.querySelector('.prev')
+const slides = document.querySelectorAll('.cw'); // select all cards
 
-prevButton.addEventListener('click', () => {
-        if ((currentCard.classList.contains('.hidden'))) {
-                currentCard.classList.remove('hidden');
-                console.log('clicked')
-        } else {
-                currentCard.classList.add('hidden')
-                console.log('hidden')
-        } 
-})
+// seperate listener for prev event
+prevbutton.addEventListener('click', function() {
+        console.log('clicked');
+        console.log(currentSlide);
+        slides[currentSlide - 1].classList.add('hidden');
+        currentSlide++;
+        // loop back to start of slide show
+        if (currentSlide >= slides.length){
+                currentSlide = 1;
+        }
+        slides[currentSlide + 1].classList.remove('hidden');
+});
 
-nextButton.addEventListener('click', () => {
-        if (!(currentCard.classList.contains('.hidden'))) {
-                currentCard.classList.add('hidden');
-                console.log('clicked')
-        } else {
-                currentCard.classList.remove('hidden')
-                console.log('hidden')
-        } 
-})
+// seperate listener for next event
+nextbutton.addEventListener('click', function() {
+        console.log('clicked');
+        console.log(currentSlide);
+        slides[currentSlide + 1].classList.add('hidden');
+        currentSlide++;
+        // loop back to start of slide show
+        if (currentSlide >= slides.length){
+                currentSlide = 1;
+        }
+        slides[currentSlide + 1].classList.remove('hidden');
+});

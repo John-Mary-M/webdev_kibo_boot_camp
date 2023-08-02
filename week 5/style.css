@@ -8,8 +8,21 @@ header{
         background-color: #12263A;
         color: #FEFAE0;
         align-items: center;
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
 }
-
+header h1{
+        text-align: center;
+}
+.search button:hover{
+        background-color: #0a0a07;
+        color: #ffc4e9;
+}
+.course-link button:hover{
+        background-color: #0a0a07;
+        color: #ffc4e9;
+}
 .intro h2, h3{
         text-align: center;
 }
@@ -79,9 +92,10 @@ header{
 #signin-color:hover{
         background-color: #12263A;
         color: papayawhip;
+
 }
 .profiles{
-        padding-top: 20px;
+        padding-top: 10px;
 }
 
  .obasi {
@@ -135,6 +149,7 @@ header{
 
 #team {
         text-align: center;
+        padding-top: 25px;
 }
 .footer{
         text-align: center;
@@ -163,4 +178,18 @@ header{
 .prev .next{
         position: absolute;
         transform: translateY(-50%);
+}
+
+@media screen and (max-width: 768px) {
+        h3 {
+                font-size: 18px;
+                /* Adjust font size for smaller screens */
+        }
+}
+
+@media screen and (max-width: 480px) {
+        h3 {
+                font-size: 16px;
+                /* Adjust font size for even smaller screens */
+        }
 }

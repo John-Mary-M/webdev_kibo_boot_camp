@@ -10,21 +10,23 @@
 
 <body>
         <header>
-                <div class="search">
+                <div id="home" class="search">
                         <input type="text" placeholder="Search for courses">
                         <button type="submit">Search</button>
                 </div>
 
                 <div class="logo">
                         <h1>
-                                logo
+                                Code Academy
                         </h1>
                 </div>
+                <div class="course-link"><a href="#course-cards"><button>AVAILABLE COURSES</button></a></div>
                 <!--<div class="menu">Menu</div>-->
-                <select name="Menu" id="">
-                        <option value="option1">Log in</option>
-                        <option value="option2">Donate</option>
-                        <option value="option3">Work with us</option>
+                <select onchange="location = this.value;" name="Menu" id="">
+                        <option value="#signin-color">Log in</option>
+                        <option value="#team">The Team</option>
+                        <option value="#home">Home</option>
+                        <option value="#contact">Work with us</option>
                 </select>
 
         </header>
@@ -80,7 +82,7 @@
         </div>
 
 
-        <div class="cards">
+        <div class="cards" id="course-cards">
                 <button class="slider prev"> <strong>
                                 </strong><</button>
                 <div class="pyCard cw">
@@ -190,7 +192,7 @@
         </div>
 
         <!--Add footer here-->
-        <div class="footer">
+        <div id="contact" class="footer">
                 <h4>CONTACT US</h4>
                 <p>
                         email: 
